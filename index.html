@@ -1,0 +1,316 @@
+<!doctype html>  
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>RubyConf 2012</title>
+
+		<meta name="description" content="Lightening Talk.">
+		<meta name="author" content="Vipul A M">
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/main.css">
+
+		<link rel="stylesheet" href="lib/zenburn.css">
+	</head>
+	
+	<body>
+		
+		<div id="reveal">
+			
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<h1>GRuby*</h1>
+					<h3 class="inverted">Git, Large Files, Ruby, Cloud- CI</h3>
+					<script>
+						// Delicously hacky. Look away.
+						if( navigator.userAgent.match( /(iPhone|iPad|iPod|Android)/i ) )
+						document.write( '<p style="color: rgba(0,0,0,0.3); text-shadow: none;">('+'Tap to navigate'+')</p>' );
+					</script>
+					<br/><br/>
+									
+				</section>
+				
+				<section>
+					<h2>#whoami</h2>
+					<p>
+						<br/><br/>
+						Still a "Student".
+						</p>
+					<p>
+						<i><small>- <a href="http://vipul.byclor.org">Vipul A M</a> / <a href="http://twitter.com/vipulnsward">@vipulnsward</a></small></i>
+					</p>
+				</section>
+
+					<section>
+						<h2>Yay!</h2>
+						<p><br/><br/>
+							<h2>:)</h2>
+						</p>
+						
+					</section>
+				
+				<section>
+					<section>
+						<h2></h2>
+						<p><br/><br/>
+							<img src="git.png"></img><br/>
+							I &lt;3 Git.
+						</p>
+						
+					</section>
+					
+					<section>
+						<h2></h2>
+						<p><br/><br/>
+							<img height="300" src="octocat.png"><br/>
+							I &lt;3 Github.
+						</p>
+						
+					</section>
+					
+					<section>
+						<h2></h2>
+						<p><br/><br/>
+							Big Repos !&lt;3 Git.
+						</p>
+						
+					</section>
+					
+					<section>
+						<h2>Who</h2>
+						<p><br/><br/>
+							Google, Facebook, etc.
+						</p>
+						
+					</section>
+					
+					<section>
+						<h2>Why?</h2>
+						<p><br/><br/>
+							!Large Files
+						</p>
+						
+					</section>
+					
+
+				</section>
+
+
+				<section>
+					
+					<section>
+						<h2>What?</h2>
+						<p><br/><br/>
+							<h3>git-bigfile</h3>
+							Old, unsupported and in C!
+						</p>
+						
+					</section>
+					
+					<section>
+						<h2>Git-Annex</h2>
+						<p><br/><br/>
+							Good one, and supported, Haskell.
+						</p>
+						
+					</section>
+					
+					<section>
+						<h2>Low-Level</h2>
+						<p><br/><br/>
+							<h3>libgit-ruby</h3>
+							Ruby Wrapper to libgit, for low level access.
+						</p>
+						
+					</section>
+					
+					
+					
+					<section>
+						<h2>Git-Media</h2>
+						<p><br/><br/>
+							<ul>
+								<li class="fragment">Wrapper to Git</li>
+								<li class="fragment">Store small relevant Files under Git</li>
+								<li class="fragment">Store Files you don't want to revision under separate namespace</li>
+								<li class="fragment">~Sync them up:SCP, FilePath, "Amazon S3""</li>
+							</ul>
+						</p>
+						
+					</section>
+					
+					<section>
+						<h2>Git-Media</h2>
+						<p><br/><br/>
+							Yeah, its Ruby!
+						</p>
+						
+					</section>
+					
+					<section>
+						<h2>Grit</h2>
+						<p><br/><br/>
+							Github uses this.
+							<br/>Umm, yeah.
+						</p>
+						
+					</section>
+					
+					<section>
+						<h2>Grit</h2>
+						<p><br/><br/>
+							OO Read/Write Access to Git.
+						</p>
+						
+					</section>
+					
+					<section>
+						<h2>Awesome</h2>
+						<p><br/><br/>
+							Use it for Git Repo Access for anything.
+						</p>
+						
+					</section>
+					
+					
+				</section>	
+						
+
+				<section>
+					
+					<section>
+						<h2>On the Web</h2>
+						<p><br/><br/>
+							<h3>Gittorious</h3>
+						</p>
+						
+					</section>
+					
+					<section>
+						<h2>On the Web</h2>
+						<p><br/><br/>
+							<h3>Ginatra</h3>
+						</p>
+						
+					</section>
+					
+					
+				</section>
+
+
+				<section>
+					
+					<section>
+						<h2>Large Repos, and Cloud</h2>
+						<p><br/><br/>
+							Large Repos, {5-6 GB+}
+							
+						</p>
+						
+					</section>
+					
+					<section>
+						<h2></h2>
+						<p><br/><br/>
+							But Developers work only on some.
+						</p>
+						
+					</section>
+					
+					
+					<section>
+						<h2>Harnessing Cloud</h2>
+						<p>
+							<ol>
+								<li>Use Memory for swap</li>
+								<li>Use CAS, Store Commit Blobs in Cloud</i>
+								<li>Checkout whenever needed</li>
+								<li>CI is the main need, use it from Bucket Data</li>
+							</ol>
+								
+						</p>
+						
+					</section>
+					
+					<section>
+						<h2>Umm, yeah</h2>
+						<p><br/><br/>
+							Grit+git-media+Cloud FTW!
+						</p>
+						
+					</section>
+					
+				</section>	
+
+	
+
+
+							
+					
+					<section>
+						<h1>THE END</h1>
+						<h3 class="inverted">Vipul A. M. </h3>
+						<a href="github.com/vipulnsward">@code</a><br/>
+						<a href="twitter.com/vipulnsward">@vipulnsward</a>
+					</section>
+	
+
+					
+	
+			</div>
+
+			<!-- The navigational controls UI -->
+			<aside class="controls">
+				<a class="left" href="#">&#x25C4;</a>
+				<a class="right" href="#">&#x25BA;</a>
+				<a class="up" href="#">&#x25B2;</a>
+				<a class="down" href="#">&#x25BC;</a>
+			</aside>
+
+			<!-- Displays presentation progress, max value changes via JS to reflect # of slides -->
+			<div class="progress"><span></span></div>
+			
+		</div>
+		
+		<script src="js/reveal.js"></script>
+		<script src="lib/highlight.js"></script>
+		<script>
+			// Parse the query string into a key/value object
+			var query = {};
+			location.search.replace( /[A-Z0-9]+?=(\w*)/gi, function(a) {
+				query[ a.split( '=' ).shift() ] = a.split( '=' ).pop();
+			} );
+
+			Reveal.initialize({
+				// Display controls in the bottom right corner
+				controls: true,
+
+				// Display a presentation progress bar
+				progress: true,
+
+				// If true; each slide will be pushed to the browser history
+				history: false,
+
+				// Flags if mouse wheel navigation should be enabled
+				mouseWheel: true,
+
+				// Apply a 3D roll to links on hover
+				rollingLinks: true,
+
+				// UI style
+				theme: query.theme || 'neon', // default/neon
+
+				// Transition style
+				transition: query.transition || 'default' // default/cube/page/concave/linear(2d)
+			});
+
+			hljs.initHighlightingOnLoad();
+		</script>
+
+	</body>
+</html>
